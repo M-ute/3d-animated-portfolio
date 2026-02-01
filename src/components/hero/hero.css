@@ -1,3 +1,104 @@
-.hero {
-    
+ .hero {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
 }
+
+.hSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hTitle {
+    margin-top: 50px;
+    font-size: 100px;
+    color: pink;
+}
+
+.hTitle span {
+    color: whitesmoke;
+}
+
+.hTitle span:hover {
+    color: pink;
+ }
+
+.hTitle:hover {
+    color: whitesmoke;
+}
+
+.hTitle:hover span {
+    color: pink;
+}
+
+.awards{
+    width: 30%;
+}
+.awards p {
+    color: white;
+    margin: 17px 0px;
+    font-size: 14px;
+}
+
+.awardList {
+    display: flex;
+    gap: 10px;
+}
+
+.awardList img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 7px;
+}
+
+.scroll {
+    margin-bottom: 50px;
+    width: max-content;
+}
+
+
+
+
+.hSection.right  {
+    align-items: end;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    background-color: #260b5c;
+    border-bottom-right-radius: 15px;
+}
+
+.follow img {
+    width: 24px;
+    height: 24px;
+}
+
+.followTextContainer {
+    width: 24px;
+    height: 24px;
+}
+
+.followText {
+    background-color: rgb(208, 120, 135);
+    rotate: 90deg;
+    font-size: 12px;
+    width: max-content;
+    height: 100%;
+    transform-origin: left top;
+    transform: translateY(-25px);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+
+} 

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*SCROLL PAGE EFFECT (VERTICAL) */
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background: linear-gradient(to bottom, #12071f, #2f204e);
+    color: white;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1536px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: rgb(238, 2, 2);*/
+
+}
+
+/* section:nth-child(1) {
+    background-color: #2c0b6e;
+}
+
+section:nth-child(2) {
+    background-color: #db9c27;
+}
+
+section:nth-child(3) {
+    background-color: turquoise;
+}
+
+section:nth-child(4) {
+    background-color: tomato;
+} */
+
+
+
+
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+
+
+
+
+/*RESPONSIVENESS FOR ALL SCREENS*/
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px ;
+    }
+    
+}
+
+@media (min-width: 1240px) {
+    .container {
+        max-width: 1240px;
+    }
+    
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+    
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+    
+}

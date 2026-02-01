@@ -1,9 +1,110 @@
 
 import "./hero.css";
+import Speech from "./speech";
 
 const Hero = () => {
+
     return (
-        <div className='hero'>Hero</div>
+        <div className='hero'>
+            {/*LEFT SECTION*/}
+            <div className="hSection left">
+                {/*TTITLE*/}
+                <h1 className="hTitle">Hey There, <br/> <span>I'm Amos</span></h1>
+                
+                {/*AWARDS*/}
+                <div className="awards">
+                    <h2> Beginner Frontend Designer</h2> 
+                    <p>A React.js and Next.js Enthusiast</p>
+                    <div className="awardList">
+                        <img src="./public/award1.png" alt="" />
+                        <img src="./public/award2.png" alt="" />
+                        <img src="./public/award3.png" alt="" />
+                    </div>
+                </div>
+            
+
+                {/*SCROLL SVG*/}
+                <a href="#services" className="scroll">
+                    <svg  xmlns="http://www.w3.org/2000/svg" 
+                    width="50"  
+                    height="50"  
+                    fill="currentColor" 
+                    viewBox="0 0 24 24" 
+                >
+                    <path d="M20 17h-.63c.61-2.21 1.41-6.63-.73-9.74-1.43-2.08-3.85-3.17-7.22-3.25L9.71 2.3a1.01 1.01 0 0 0-.81-.29c-.3.03-.57.19-.73.44l-6 9c-.26.4-.21.92.12 1.26l2 2c.34.34.87.39 1.26.12L8.3 13h.56l-3.33 4H4c-1.1 0-2 .9-2 2v1c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-1c0-1.1-.9-2-2-2m0 3H4v-1h2c.3 0 .58-.13.77-.36l5-6A1 1 0 0 0 11 11H8c-.2 0-.39.06-.55.17l-2.32 1.54-.84-.84 4.87-7.3 1.14 1.14c.19.19.44.29.71.29 2.88 0 4.9.8 5.99 2.39 2.3 3.34.1 9.2.08 9.25a.997.997 0 0 0 .93 1.35h2v1Z"></path>
+                    <path d="M9.5 7.5c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m0 1h.5z"></path>
+                    </svg>
+                </a>
+
+            </div>
+            {/*RIGHT SECTION*/}
+            <div className="hSection right">
+                {/*FOLLOW ICONS*/}
+                <div className="follow">
+                    <a href="/">
+                        <img src="./public/facebook.png" alt="" />
+                    </a>
+
+                    <a href="/">
+                        <img src="./public/instagram.png" alt="" />
+                    </a>
+
+                    <a href="/">
+                        <img src="./public/youtube.png" alt="" />
+                    </a>
+                    <div className="followTextContainer">
+                        <div className="followText">FOLLOW ME</div>
+                    </div>
+                </div>
+
+            {/*BUBBLE SPEECH*/}
+            <Speech/>
+
+            {/*CERTIFICATE*/}
+            <div className="certificate">
+                <img src="./public/certificate.png" alt="" />
+                <br />
+                 Web Development Certificate <br/>
+                PROFESSIONAL <br/>
+                UI designer
+            </div>
+
+            {/* CONTACT BUTTON */}
+            <a href="/#contact" className="contactLink">
+                <div className="contactButton">
+                    <svg viewBox="0 0 200 200" width="150" height="150">
+                        <circle cx="100" cy="100" r="90" fill="pink"/>
+                        <path 
+                                id="innerCirclePath" 
+                                fill="none" 
+                                d="M 100, 100 m -60, 0 a 60, 60 0 1, 1 120, 0 a 60, 60 0 1, 1 -120, 0 "/>
+                        <text className="circleText">
+                            <textPath href="#innerCirclePath">Hire Now .</textPath>
+                        </text>
+                        <text className="circleText">
+                            <textPath href="#innerCirclePath" startOffset="47%">Contact Me .</textPath>
+                        </text>
+                    </svg>
+
+                    <div className="arrow">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="50"
+                            height="50"
+                            fill="none"
+                            stroke="black"
+                            strokeWidth="2">
+                            
+                            <line x1="6" y1="18" x2="18" y2="6" />
+                            <polyline points="9 6 18 6 18 15" />
+                        </svg>
+
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
     )
 }
 
