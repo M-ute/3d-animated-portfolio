@@ -4,6 +4,31 @@
     overflow: hidden;
 }
 
+.bg {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hImg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+    margin: auto;
+    height: 80%;
+    width: max-content;
+}
+
+.hImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+
 .hSection {
     width: 50%;
     height: 100%;
@@ -102,3 +127,79 @@
     border-bottom-right-radius: 10px;
 
 } 
+
+
+.bubbleContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+     align-items: end;
+
+
+
+}
+.bubble {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: #555;
+    padding: 24px;
+    font-size: 24px;
+    border-radius: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.bubbleContainer img {
+    width: 55px;
+    height: 50px;
+    border-radius: 100%;
+
+}
+
+.certificate {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 24px;
+    gap: 8px;
+    font-weight: 300;
+    color: #ddd;
+    align-items: center;
+}
+
+.certificate img {
+    width: 70px;
+    height: 70px; 
+}
+
+.contactLink {
+    margin-bottom: 50px;
+}
+
+.circleText {
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+
+.contactButton {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
