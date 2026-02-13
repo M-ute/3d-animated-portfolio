@@ -163,12 +163,12 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: end;
     line-height: 24px;
     gap: 8px;
     font-weight: 300;
     color: #ddd;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .certificate img {
@@ -177,6 +177,7 @@
 }
 
 .contactLink {
+    
     margin-bottom: 50px;
 }
 
@@ -202,4 +203,106 @@
     width: 80px;
     height: 80px;
     margin: auto;
+}
+
+
+@media  ( max-width: 1536px) {
+    .hTitle {
+    font-size: 72px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .bg {
+        height: 60%;
+        top: auto;
+        bottom: 0;
+
+    }
+
+    .bubble {
+        font-size: 20px;
+        text-align: start;
+        padding: 10px;
+        
+    }
+
+    .hImg {
+        height: 100% ;
+    }
+
+    .bubbleContainer {
+        width: 70%;
+    }
+
+    .awards {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1239px) {
+    .hTitle {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1028px) {
+    .hTitle {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .hTitle {
+        font-size: 50px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .bg {
+        height: 55%;
+    }
+
+    .hSection {
+        width: 100%;
+    }
+
+    .hSection.left {
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .awardList {
+        justify-content: center;
+    }
+
+    .awardList img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .awards {
+        width: 100%;
+    }
+    .awards h2 {
+        font-size: 20px;
+    } 
+
+    .hTitle {
+        font-size: 45px;
+    }
+
+    .follow, .certificate, .bubbleContainer{
+        display: none;
+    }
+
+    .hSection.right {
+        justify-content: end;
+    }
 }
