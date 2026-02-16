@@ -63,9 +63,9 @@ const Hero = () => {
                     <motion.h2 variants={awardVariants}> Beginner Frontend Designer</motion.h2> 
                     <motion.p  variants={awardVariants}>A React.js and Next.js Enthusiast</motion.p>
                     <motion.div variants={awardVariants} className="awardList">
-                        <motion.img variants={awardVariants} src="../public/award1.png" alt="" />
-                        <motion.img variants={awardVariants} src="../public/award2.png" alt="" />
-                        <motion.img variants={awardVariants} src="../public/award3.png" alt="" />
+                        <motion.img variants={awardVariants} src="/award1.png" alt="" />
+                        <motion.img variants={awardVariants} src="/award2.png" alt="" />
+                        <motion.img variants={awardVariants} src="/award3.png" alt="" />
                     </motion.div>
                 </motion.div>
             
@@ -97,15 +97,15 @@ const Hero = () => {
                 {/*FOLLOW ICONS*/}
                 <motion.div variants={followVariants} initial="initial" animate="animate" className="follow">
                     <motion.a variants={followVariants} href="/">
-                        <img src="../public/facebook.png" alt="" />
+                        <img src="/facebook.png" alt="" />
                     </motion.a>
 
                     <motion.a variants={followVariants} href="/">
-                        <img src="../public/instagram.png" alt="" />
+                        <img src="/instagram.png" alt="" />
                     </motion.a>
 
                     <motion.a variants={followVariants} href="/">
-                        <img src="../public/youtube.png" alt="" />
+                        <img src="/youtube.png" alt="" />
                     </motion.a>
                     <motion.div variants={followVariants} className="followTextContainer">
                         <div className="followText">FOLLOW ME</div>
@@ -120,7 +120,7 @@ const Hero = () => {
                 animate={{ opacity: [0, 1] }}
                 transition={{ duration: 1 }} 
                 className="certificate">
-                <img src="../public/certificate.png" alt="" />
+                <img src="/certificate.png" alt="" />
                 <br />
                  Web Development Certificate <br/>
                 PROFESSIONAL <br/>
@@ -176,7 +176,7 @@ const Hero = () => {
                     </Suspense>
                 </Canvas>
                 <div className="hImg">
-                    <img src="../public/self3.png" alt="" />
+                    <img src="/self3.png" alt="" />
                 </div>
             </div>
         </div>
