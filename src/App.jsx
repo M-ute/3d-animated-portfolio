@@ -2,12 +2,11 @@ import Hero from "./components/hero/Hero";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";  
-
+ 
 
 
 const App = () => {
   return (
-    //Sections are imported here
     <div className='container'>
       <section id="#home">
         <Hero/>
@@ -25,7 +24,8 @@ const App = () => {
         <Contact/>
       </section>
     </div>
-  )
-}
+
+  );
+};
 
 export default App
