@@ -178,7 +178,7 @@
 
 .contactLink {
     
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .circleText {
@@ -271,7 +271,7 @@
 
     .hImg {
         height: 100% ;
-        max-width: fit-content;
+        max-width: 100%;
     }
 
     
