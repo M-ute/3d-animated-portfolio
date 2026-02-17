@@ -6,7 +6,7 @@
     position: relative;
 }
 
-/*base styles*/
+/* base styles*/ 
 html, body {
     height: 100%;
     margin: 0;
@@ -31,7 +31,7 @@ html, body {
     height: 80%;
     width: max-content;
     /*for iOS fix*/
-    max-width: 100%;
+    max-width: 80%;
     pointer-events: none; /*this prevents touch issues*/
 }
 
@@ -50,9 +50,9 @@ html, body {
 }
 
 .hTitle {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 100px;
-    color: pink;
+    color: rgb(61, 211, 119);
 }
 
 .hTitle span {
@@ -60,7 +60,7 @@ html, body {
 }
 
 .hTitle span:hover {
-    color: pink;
+    color: rgb(61, 211, 119);
  }
 
 .hTitle:hover {
@@ -68,7 +68,7 @@ html, body {
 }
 
 .hTitle:hover span {
-    color: pink;
+    color: rgb(61, 211, 119);
 }
 
 .awards{
@@ -292,8 +292,7 @@ html, body {
         text-align: center;
         gap: 20px;
         /*Add padding to prevent content from touching edges*/
-        padding: 20px;
-        box-sizing: border-box;
+    
     }
     .awardList {
         justify-content: center;

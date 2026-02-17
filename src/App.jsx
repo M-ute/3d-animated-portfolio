@@ -8,7 +8,7 @@ import Contact from "./components/contact/Contact";
 const App = () => {
   return (
     <div className='container'>
-      <section id="#home" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <section id="#home">
         <Hero/>
       </section>
       
