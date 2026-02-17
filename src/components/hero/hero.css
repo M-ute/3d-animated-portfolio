@@ -1,16 +1,7 @@
- .hero {
-    height: 100vh;
-    height: -webkit-fill-avialable;
+.hero {
+    height: 100%;
     display: flex;
     overflow: hidden;
-    position: relative;
-}
-
-/* base styles*/ 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .bg {
@@ -30,9 +21,6 @@ html, body {
     margin: auto;
     height: 80%;
     width: max-content;
-    /*for iOS fix*/
-    max-width: 80%;
-    pointer-events: none; /*this prevents touch issues*/
 }
 
 .hImg img {
@@ -50,7 +38,7 @@ html, body {
 }
 
 .hTitle {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 100px;
     color: rgb(61, 211, 119);
 }
@@ -190,7 +178,7 @@ html, body {
 
 .contactLink {
     
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .circleText {
@@ -275,8 +263,6 @@ html, body {
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
     }
 
     .bg {
@@ -291,8 +277,6 @@ html, body {
         align-items: center;
         text-align: center;
         gap: 20px;
-        /*Add padding to prevent content from touching edges*/
-    
     }
     .awardList {
         justify-content: center;
@@ -312,11 +296,6 @@ html, body {
 
     .hTitle {
         font-size: 45px;
-        /*Ensure the title doesn't overflow*/
-        word-break: break-word;
-        max-width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
     }
 
     .follow, .certificate, .bubbleContainer{
@@ -324,51 +303,7 @@ html, body {
     }
 
     .hSection.right {
+        margin-bottom: 0px;
         justify-content: end;
-        padding-bottom: 20px;
-    }
-}
-
-
-/* Add this new media query for iPhone specific fixes */
-@supports (-webkit-touch-callout: none) {
-    /* iOS specific styles */
-    .hero {
-        height: -webkit-fill-available;
-        min-height: -webkit-fill-available;
-    }
-
-    .hImg {
-        /* Prevent image from causing overflow */
-        max-height: 80%;
-        width: auto;
-    }
-
-    .hImg img {
-        object-fit: contain; /* Better for iOS */
-    }
-
-    /* Ensure text doesn't get cut off */
-    .hTitle {
-        margin-top: 30px; /* Reduce top margin on iOS */
-        line-height: 1.2;
-    }
-
-    /* Fix for the awards section */
-    .awards {
-        width: 90%; /* More width on iOS */
-        margin: 0 auto;
-    }
-}
-
-/* Additional fixes for very small screens */
-@media (max-width: 375px) {
-    .hTitle {
-        font-size: 36px;
-    }
-
-    .awards p {
-        font-size: 12px;
-        padding: 0 15px;
     }
 }

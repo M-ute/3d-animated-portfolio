@@ -137,7 +137,7 @@ const Hero = () => {
                 transition={{duration: 10, repeat: Infinity, ease: "linear"}}
                 >
                     <svg viewBox="0 0 200 200" width= "150" height="150">
-                        <circle cx="100" cy="100" r="90" fill="pink"/>
+                        <circle cx="100" cy="100" r="85" fill="rgba(8, 173, 126, 0.71)"/>
                         <path 
                                 id="innerCirclePath" 
                                 fill="none" 
