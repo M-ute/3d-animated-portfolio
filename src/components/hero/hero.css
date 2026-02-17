@@ -301,6 +301,10 @@
         font-size: 20px;
     } 
 
+    .scroll {
+        z-index: -1;
+    }
+
     .hTitle {
         font-size: 45px;
     }
