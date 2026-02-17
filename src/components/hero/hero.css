@@ -269,6 +269,13 @@
         height: 55%;
     }
 
+    .hImg {
+        height: 100% ;
+        max-width: fit-content;
+    }
+
+    
+
     .hSection {
         width: 100%;
     }
