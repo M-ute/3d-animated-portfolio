@@ -136,16 +136,15 @@
 }
 
 @media (max-width: 768px) {
-    .services {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
+    
     .sSection {
         width: 100%;
     }
+
+    .sSection.right {
+        display: none;
+    }
+
 
 
     .counterList {
