@@ -12,9 +12,9 @@ const App = () => {
         <Hero/>
       </section>
       
-      <section id="#portfolio">
+      {/* <section id="#portfolio">
         <Portfolio/>
-      </section> 
+      </section>  */}
 
       <section id="#services">
         <Services/>

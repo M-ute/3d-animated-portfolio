@@ -51,7 +51,7 @@ const Hero = () => {
                 animate = {{ y: 0, opacity: 1 }}
                 transition = {{ duration: 1 }}
                 className="hTitle">Hey There, <br/> 
-                <span>I'm Amos!</span>
+                <span> I&apos;m Amos!</span>
                 </motion.h1>
                 
                 {/*AWARDS*/}
@@ -143,7 +143,7 @@ const Hero = () => {
                                 fill="none" 
                                 d="M 100, 100 m -60, 0 a 60, 60 0 1, 1 120, 0 a 60, 60 0 1, 1 -120, 0 "/>
                         <text className="circleText">
-                            <textPath href="#innerCirclePath">Hire Now .</textPath>
+                            <textPath href="#innerCirclePath"> Hire Now . </textPath>
                         </text>
                         <text className="circleText">
                             <textPath href="#innerCirclePath" startOffset="47%">Contact Me .</textPath>

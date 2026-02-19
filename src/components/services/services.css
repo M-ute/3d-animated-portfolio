@@ -1,3 +1,177 @@
 .services {
-    
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.sSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center ;
+}
+
+
+
+.sTitle {
+    font-size: 85px;
+    margin-bottom: 25px ;
+    color: rgb(61, 211, 119)
+}
+
+.sTitle:hover {
+    color: whitesmoke;
+}
+
+.serviceList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.service {
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(56, 55, 55);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.serviceIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceIcon img {
+    width: 30 px;
+    height: 30px;
+}
+
+.serviceInfo h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.serviceInfo h3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.service:nth-child(1) .serviceIcon {
+    background-color: rgb(21, 21, 87);
+}
+
+.service:nth-child(2) .serviceIcon {
+    background-color: rgb(169, 195, 26);
+}
+
+.service:nth-child(3 ) .serviceIcon {
+    background-color: rgb(205, 30, 109);
+}
+
+
+.counterList {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.counter h1 {
+    font-size: 40px;
+    color: rgb(61, 211, 119);
+}
+
+.counter p {
+    font-size: 17px;
+    color: black;
+    border: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(245, 134, 198, 0.8);
+}
+
+
+
+/*responsiveness*/
+@media  (max-width: 1536px) {
+    .service, .counterList {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sTitle {
+        font-size: 128px;
+    }
+
+    .service {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sTitle {
+        font-size: 50px;
+    }
+
+    .service .counterList {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sSection {
+        width: 100%;
+    }
+
+
+    .counterList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .sTitle {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 1270px) {
+    .sTitle {
+        font-size: 50px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .counterList {
+        width: 100%;
+    }
 }
