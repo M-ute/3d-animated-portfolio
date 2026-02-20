@@ -176,7 +176,7 @@ const Hero = () => {
                     </Suspense>
                 </Canvas>
                 <div className="hImg">
-                    <img src="/self3.png" alt="" />
+                    <img src="/self4.png" alt="" />
                 </div>
             </div>
         </div>
