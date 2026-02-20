@@ -20,13 +20,14 @@
     right: 0;  
     margin: auto;
     height:85%;
-    width: max-content;
+    width: auto; /**/
+    max-width: 50%; /**/
 }
 
 .hImg img {
     width: 100%;
     height: 100%;
-    object-fit: cover ;
+    object-fit: contain ; /*from cover to contain*/
 }
 
 .hSection {
@@ -208,7 +209,7 @@
 
 
 /* MacBook Pro 16" Retina - 2560x1600 */
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
     .hTitle {
         font-size: 130px;
     }
@@ -265,7 +266,7 @@
         width: 100px;
         height: 100px;
     }
-}
+} */
 
 /* 2560x1600 specifically */
 /* @media (min-width: 2400px) {
@@ -353,15 +354,15 @@
     }
 } */
 
-
+/* 
 @media  ( max-width: 1536px) {
     .hTitle {
     font-size: 72px;
     }
-}
+} */
 
 /* MacBook Air / 1440px screens */
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
     .hTitle {
         font-size: 64px;
     }
@@ -369,8 +370,8 @@
     .bubble {
         font-size: 22px;
     }
-}
-
+} */
+/* 
 @media (max-width: 1280px) {
     .hTitle {
         font-size: 54px;
@@ -401,10 +402,10 @@
     .awards {
         width: 50%;
     }
-}
+} */
 
 
-
+/* 
 @media (max-width: 1024px) {
     .hTitle {
         font-size: 46px;
@@ -422,11 +423,11 @@
         width: 70%;
         font-size: 13px;
     }
-}
+} */
 
 
 
-
+/* 
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -477,6 +478,251 @@
     }
 
     .follow, .certificate, .bubbleContainer{
+        display: none;
+    }
+
+    .hSection.right {
+        margin-bottom: 0px;
+        justify-content: end;
+    }
+} */
+
+
+@media (min-width: 1537px) and (max-width: 1920px) {
+    .hTitle {
+        font-size: 90px;
+    }
+
+    .hImg {
+        height: 75%;
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1921px) {
+    /* Covers 2560x1600 MacBook Pro and any larger screen */
+    .hTitle {
+        font-size: 120px;
+        margin-top: 60px;
+    }
+
+    .hImg {
+        height: 72%;
+        max-width: 40%;   /* tight cap so it never overflows */
+    }
+
+    .bubble {
+        font-size: 26px;
+        padding: 28px;
+        height: 115px;
+    }
+
+    .bubbleContainer {
+        width: 42%;
+        gap: 12px;
+    }
+
+    .bubbleContainer img {
+        width: 65px;
+        height: 60px;
+    }
+
+    .awards {
+        width: 22%;
+    }
+
+    .awards p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .awardList img {
+        width: 55px;
+        height: 55px;
+        padding: 8px;
+    }
+
+    .certificate {
+        width: 46%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .certificate img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .follow {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .follow img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .circleText {
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
+
+    .arrow {
+        width: 100px;
+        height: 100px;
+    }
+
+    .scroll {
+        margin-bottom: 60px;
+    }
+
+    .contactLink {
+        margin-bottom: 60px;
+    }
+}
+
+
+/* ════════════════════════════════════════
+   STANDARD LAPTOPS (max-width, descending)
+   ════════════════════════════════════════ */
+
+@media (max-width: 1536px) {
+    .hTitle {
+        font-size: 72px;
+    }
+
+    .hImg {
+        max-width: 52%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hTitle {
+        font-size: 64px;
+    }
+
+    .bubble {
+        font-size: 22px;
+    }
+
+    .hImg {
+        max-width: 54%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .hTitle {
+        font-size: 54px;
+    }
+
+    .bg {
+        height: 65%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .bubble {
+        font-size: 18px;
+        text-align: start;
+        padding: 12px;
+    }
+
+    .hImg {
+        height: 80%;
+        max-width: 58%;
+    }
+
+    .bubbleContainer {
+        width: 65%;
+    }
+
+    .awards {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hTitle {
+        font-size: 46px;
+    }
+
+    .hImg {
+        height: 75%;
+        max-width: 62%;
+    }
+
+    .bubbleContainer {
+        width: 75%;
+    }
+
+    .awards {
+        width: 60%;
+    }
+
+    .certificate {
+        width: 70%;
+        font-size: 13px;
+    }
+}
+
+
+/* ════════════════════════════════════════
+   TABLET & MOBILE
+   ════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .bg {
+        height: 55%;
+    }
+
+    .hImg {
+        height: 100%;
+        max-width: 100%;  /* full width allowed on mobile */
+    }
+
+    .hSection {
+        width: 100%;
+    }
+
+    .hSection.left {
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .awardList {
+        justify-content: center;
+    }
+
+    .awardList img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .awards {
+        width: 100%;
+    }
+
+    .awards h2 {
+        font-size: 20px;
+    }
+
+    .scroll {
+        z-index: -1;
+    }
+
+    .hTitle {
+        font-size: 45px;
+    }
+
+    .follow,
+    .certificate,
+    .bubbleContainer {
         display: none;
     }
 
