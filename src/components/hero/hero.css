@@ -21,7 +21,7 @@
     margin: auto;
     height:85%;
     width: auto; /**/
-    max-width: 50%; /**/
+    max-width: 100%; /**/
 }
 
 .hImg img {
@@ -208,285 +208,6 @@
 }
 
 
-/* MacBook Pro 16" Retina - 2560x1600 */
-/* @media (min-width: 1920px) {
-    .hTitle {
-        font-size: 130px;
-    }
-
-    .hImg {
-        height: 70%;
-        max-width: 50%;
-    }
-
-    .bubble {
-        font-size: 28px;
-        padding: 30px;
-        height: 120px;
-    }
-
-    .bubbleContainer {
-        width: 45%;
-    }
-
-    .awards {
-        width: 25%;
-    }
-
-    .awards p {
-        font-size: 16px;
-    }
-
-    .awardList img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .follow img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .certificate {
-        width: 50%;
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .certificate img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .circleText {
-        font-size: 24px;
-    }
-
-    .arrow {
-        width: 100px;
-        height: 100px;
-    }
-} */
-
-/* 2560x1600 specifically */
-/* @media (min-width: 2400px) {
-    .hTitle {
-        font-size: 160px;
-    }
-
-    .hImg {
-        height: 70%;
-        max-width: 100%;
-    }
-
-    .bubble {
-        font-size: 32px;
-        height: 140px;
-        padding: 35px;
-    }
-
-    .bubbleContainer {
-        width: 40%;
-        gap: 16px;
-    }
-
-    .bubbleContainer img {
-        width: 75px;
-        height: 70px;
-    }
-
-    .awards {
-        width: 22%;
-    }
-
-    .awards p {
-        font-size: 18px;
-        margin: 22px 0;
-    }
-
-    .awardList img {
-        width: 60px;
-        height: 60px;
-        padding: 9px;
-    }
-
-    .certificate {
-        width: 45%;
-        font-size: 18px;
-        line-height: 34px;
-    }
-
-    .certificate img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .follow {
-        padding: 20px;
-        gap: 14px;
-    }
-
-    .follow img {
-        width: 34px;
-        height: 34px;
-    }
-
-    .circleText {
-        font-size: 28px;
-        letter-spacing: 4px;
-    }
-
-    .arrow {
-        width: 110px;
-        height: 110px;
-    }
-
-    .hTitle {
-        margin-top: 70px;
-    }
-
-    .scroll {
-        margin-bottom: 70px;
-    }
-
-    .contactLink {
-        margin-bottom: 70px;
-    }
-} */
-
-/* 
-@media  ( max-width: 1536px) {
-    .hTitle {
-    font-size: 72px;
-    }
-} */
-
-/* MacBook Air / 1440px screens */
-/* @media (max-width: 1440px) {
-    .hTitle {
-        font-size: 64px;
-    }
-
-    .bubble {
-        font-size: 22px;
-    }
-} */
-/* 
-@media (max-width: 1280px) {
-    .hTitle {
-        font-size: 54px;
-    }
-
-    .bg {
-        height: 65%;
-        top: auto;
-        bottom: 0;
-
-    }
-
-    .bubble {
-        font-size: 18px;
-        text-align: start;
-        padding: 12px;
-        
-    }
-
-    .hImg {
-        height: 80% ;
-    }
-
-    .bubbleContainer {
-        width: 65%;
-    }
-
-    .awards {
-        width: 50%;
-    }
-} */
-
-
-/* 
-@media (max-width: 1024px) {
-    .hTitle {
-        font-size: 46px;
-    }
-
-     .bubbleContainer {
-        width: 75%;
-    }
-
-    .awards {
-        width: 60%;
-    }
-
-    .certificate {
-        width: 70%;
-        font-size: 13px;
-    }
-} */
-
-
-
-/* 
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-    }
-
-    .bg {
-        height: 55%;
-    }
-
-    .hImg {
-        height: 100% ;
-        max-width: 100%;
-    }
-
-    
-
-    .hSection {
-        width: 100%;
-    }
-
-    .hSection.left {
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-    .awardList {
-        justify-content: center;
-    }
-
-    .awardList img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .awards {
-        width: 100%;
-    }
-    .awards h2 {
-        font-size: 20px;
-    } 
-
-    .scroll {
-        z-index: -1;
-    }
-
-    .hTitle {
-        font-size: 45px;
-    }
-
-    .follow, .certificate, .bubbleContainer{
-        display: none;
-    }
-
-    .hSection.right {
-        margin-bottom: 0px;
-        justify-content: end;
-    }
-} */
-
 
 @media (min-width: 1537px) and (max-width: 1920px) {
     .hTitle {
@@ -494,8 +215,8 @@
     }
 
     .hImg {
-        height: 75%;
-        max-width: 45%;
+        height: 80%;
+        max-width: 100%;
     }
 }
 
@@ -507,8 +228,8 @@
     }
 
     .hImg {
-        height: 72%;
-        max-width: 40%;   /* tight cap so it never overflows */
+        height: 80%;
+        max-width: 100%;   /* tight cap so it never overflows */
     }
 
     .bubble {
@@ -593,7 +314,7 @@
     }
 
     .hImg {
-        max-width: 52%;
+        max-width: 100%;
     }
 }
 
@@ -607,7 +328,7 @@
     }
 
     .hImg {
-        max-width: 54%;
+        max-width: 100%;
     }
 }
 
@@ -630,7 +351,7 @@
 
     .hImg {
         height: 80%;
-        max-width: 58%;
+        max-width: 100%;
     }
 
     .bubbleContainer {
@@ -648,8 +369,8 @@
     }
 
     .hImg {
-        height: 75%;
-        max-width: 62%;
+        height: 80%;
+        max-width: 100%;
     }
 
     .bubbleContainer {
