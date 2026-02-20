@@ -214,8 +214,8 @@
     }
 
     .hImg {
-        height: 85%;
-        max-width: 900px;
+        height: 100%;
+        max-width: 100%;
     }
 
     .bubble {
@@ -274,8 +274,8 @@
     }
 
     .hImg {
-        height: 80%;
-        max-width: 1100px;
+        height: 100%;
+        max-width: 100%;
     }
 
     .bubble {
