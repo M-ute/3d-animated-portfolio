@@ -3,7 +3,6 @@ import CameraModelContainer from "./camera/CameraModelContainer";
 import DroneModelContainer from "./drone/DroneModelContainer";
 import "./services.css";
 import Counter from "./Counter";
-import { transition } from "three/examples/jsm/tsl/display/TransitionNode.js";
 import { motion, useInView } from "motion/react";
 import { useRef, useState } from "react";
 
@@ -69,7 +68,7 @@ const Services = () => {
     //3d animation
     const [currentServiceId, setCurrentServiceId] =useState(1);
     const ref = useRef();
-    const isInView = useInView(ref, {margin:"-200px"} );
+    const isInView = useInView(ref, {once: true, amount: 0.7 } );
     return (
         <div className='services' ref={ref }>
             <div className="sSection left">
@@ -84,8 +83,8 @@ const Services = () => {
                 className="serviceList">
 
                     {services.map((service) => (
-                    <motion.div 
-                    variants={listVariants}
+                    <div 
+                    
                     className="service" 
                     key={service.id}
                     onClick={() => setCurrentServiceId(service.id)}
@@ -97,7 +96,7 @@ const Services = () => {
                             <h2>{service.title}</h2>
                             <h3>{service.counter} Projects</h3>
                         </div>
-                    </motion.div> 
+                    </div> 
                     ))}
                 </motion.div>
                 <div className="counterList">

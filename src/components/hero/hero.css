@@ -451,4 +451,8 @@
         margin-bottom: 0px;
         justify-content: end;
     }
+
+    .contactLink {
+        margin-bottom: 120px;
+    }
 }
