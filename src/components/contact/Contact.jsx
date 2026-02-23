@@ -10,36 +10,8 @@ import { motion } from "motion/react";
 
 
 
-const socialVariants = {
-    initial: {
-        x: -100,
-        opacity: 0,
-    }, 
-    animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            duration: 1,
-            staggerChildren: 0.2,
-        },
-    },
 
-};
-//create my variants
-// const listVariants = {
-//     initial: {
-//         x: 100,
-//         opacity: 0,
-//     },
-//     // animate: {
-//     //     x: 0,
-//     //     opacity: 1,
-//     //     transition: {
-//     //         duration: 0.5,
-//     //         // staggerChildren: 0.2
-//     //     }
-//     // }
-// }
+
 
 
 
@@ -333,16 +305,20 @@ const Contact = () => {
                         </button>
 
                     <div className="socialMediaHandles">
-                    <motion.a variants={socialVariants} href="https://www.linkedin.com/in/wiabo-amos76" target="_blank" rel="noreferrer">
+                    <motion.a  href="https://www.linkedin.com/in/wiabo-amos76" target="_blank" rel="noreferrer">
                         <img src="/linkedin.png" alt="linkedin" />
                     </motion.a>
 
-                    <motion.a variants={socialVariants} href="https://www.x.com/KwesiMute" target="_blank" rel="noreferrer" >
+                    <motion.a  href="https://www.x.com/KwesiMute" target="_blank" rel="noreferrer" >
                         <img src="/twitter.png" alt="twitter" />
                     </motion.a>
 
-                    <motion.a variants={socialVariants} href="https://wa.me/233240552533" target="_blank" rel="noreferrer">
+                    <motion.a  href="https://wa.me/233240552533" target="_blank" rel="noreferrer">
                         <img src="/whatsapp.png" alt="whatsapp" />
+                    </motion.a>
+
+                     <motion.a  href="https://github.com/M-ute" target="_blank" rel="noreferrer">
+                        <img src="/github.png" alt="github" />
                     </motion.a>
         </div>
         </form>
