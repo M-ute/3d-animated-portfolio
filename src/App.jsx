@@ -13,8 +13,8 @@ const Contact = lazy(() => import ("./components/contact/Contact"));
 
 const App = () => {
 
-  const { ref: servicesRef, inView: servicesInView } = useInView({ threshold: 0 });
-  const { ref: contactRef, inView: contactInView } = useInView({ threshold: 0 });
+  const { ref: servicesRef, inView: servicesInView } = useInView({threshold: 0, triggerOnce: true });
+  const { ref: contactRef, inView: contactInView } = useInView({ threshold: 0, triggerOnce: true });
 
   return (
 
@@ -30,7 +30,7 @@ const App = () => {
         <Portfolio/>
       </section>  */}
 
-      <section ref={servicesRef} style={{ minHeight: "100vh" }}>
+      <section ref={servicesRef}>
         <Suspense fallback="Loading">
           
             {servicesInView && <Services/>}
@@ -38,7 +38,7 @@ const App = () => {
         </Suspense>
       </section>
       
-      <section ref={contactRef} style={{ minHeight: "100vh" }}>
+      <section ref={contactRef}>
         <Suspense fallback="Loading">
             {contactInView && <Contact/>}
         </Suspense>

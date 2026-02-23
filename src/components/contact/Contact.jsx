@@ -249,7 +249,7 @@ const Contact = () => {
   };
 
   // Character-count helper for textarea
-  const msgLen = fields.user_message.length;
+//   const msgLen = fields.user_message.length;
   const msgMax = RULES.user_message.maxLength;
 
 
@@ -265,76 +265,51 @@ const Contact = () => {
           <h1  className="cTitle">My Inbox is Lonely</h1>
 
           {/* Name */}
-          <div  className={`formItem ${errors.username && touched.username ? "has-error" : ""}`}>
-            <label htmlFor="username">Name</label>
-            <input
-              id="username"
-              type="text"
-              name="username"
-              placeholder="Yaa Baby"
-              value={fields.username}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              maxLength={RULES.username.maxLength}
-              autoComplete="name"
-              aria-describedby={errors.username ? "username-error" : undefined}
-              aria-invalid={!!errors.username}
-            />
-            {errors.username && touched.username && (
-              <span id="username-error" className="fieldError" role="alert">
-                {errors.username}
-              </span>
-            )}
-          </div>
+<div className="formItem">
+  <input
+    id="username"
+    type="text"
+    name="username"
+    placeholder={errors.username && touched.username ? errors.username : "Yaa Baby"}
+    value={fields.username}
+    onChange={handleChange}
+    onBlur={handleBlur}
+    maxLength={RULES.username.maxLength}
+    autoComplete="name"
+    aria-invalid={!!errors.username}
+  />
+</div>
 
-          {/* Email */}
-          <div  className={`formItem ${errors.user_email && touched.user_email ? "has-error" : ""}`}>
-            <label htmlFor="user_email">Email</label>
-            <input
-              id="user_email"
-              type="email"
-              name="user_email"
-              placeholder="yaababy@anymail.com"
-              value={fields.user_email}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              maxLength={RULES.user_email.maxLength}
-              autoComplete="email"
-              aria-describedby={errors.user_email ? "user_email-error" : undefined}
-              aria-invalid={!!errors.user_email}
-            />
-            {errors.user_email && touched.user_email && (
-              <span id="user_email-error" className="fieldError" role="alert">
-                {errors.user_email}
-              </span>
-            )}
-          </div>
+{/* Email */}
+<div className="formItem">
+  <input
+    id="user_email"
+    type="email"
+    name="user_email"
+    placeholder={errors.user_email && touched.user_email ? errors.user_email : "yaababy@anymail.com"}
+    value={fields.user_email}
+    onChange={handleChange}
+    onBlur={handleBlur}
+    maxLength={RULES.user_email.maxLength}
+    autoComplete="email"
+    aria-invalid={!!errors.user_email}
+  />
+</div>
 
-          {/* Message */}
-          <div  className={`formItem ${errors.user_message && touched.user_message ? "has-error" : ""}`}>
-            <label htmlFor="user_message">Message</label>
-            <textarea
-              id="user_message"
-              rows={10}
-              name="user_message"
-              placeholder="Write your message here..."
-              value={fields.user_message}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              maxLength={msgMax}
-              aria-describedby={errors.user_message ? "user_message-error" : undefined}
-              aria-invalid={!!errors.user_message}
-            />
-            <div className={`charCount ${msgLen > msgMax * 0.9 ? "charCount--warn" : ""}`}>
-              {msgLen} / {msgMax}
-            </div>
-            {errors.user_message && touched.user_message && (
-              <span id="user_message-error" className="fieldError" role="alert">
-                {errors.user_message}
-              </span>
-            )}
-          </div >
-
+{/* Message */}
+<div className="formItem">
+  <textarea
+    id="user_message"
+    rows={10}
+    name="user_message"
+    placeholder={errors.user_message && touched.user_message ? errors.user_message : "Write your message here..."}
+    value={fields.user_message}
+    onChange={handleChange}
+    onBlur={handleBlur}
+    maxLength={msgMax}
+    aria-invalid={!!errors.user_message}
+  />
+</div>
           <button className="formButton" disabled={submitting} type="submit">
             {submitting ? "Sending…" : "Send"}
           </button>

@@ -1,7 +1,7 @@
 .hero {
     height: 100%;
     display: flex;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .bg {
