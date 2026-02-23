@@ -18,7 +18,7 @@ const Speech = () => {
         1000,
         'I am a cyber security enthusiast.',
         1000,
-        'And of course, I want to compete Tesla in future.',
+        'And of course, I want to compete Tesla in the future.',
         1000
       ]}
       wrapper="span"

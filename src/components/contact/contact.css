@@ -1,3 +1,166 @@
 .contact {
-    
+    display: flex;
+    height: 100%;
+    gap: 20px;
 }
+
+.cSection {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ form {
+    width: 90% ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px ;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 13px;
+}
+
+.formButton {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    margin-left: 25%;
+    border: none;
+    border-radius: 10px 10px 0px 10px;
+    background-color: rgb(61, 211, 119);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ── Paste these into your existing contact.css ── */
+
+/* Error state on input/textarea */
+.formItem.has-error input,
+.formItem.has-error textarea {
+  border-color: #e74c3c;
+  outline-color: #e74c3c;
+}
+
+/* Inline field error message */
+.fieldError {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+/* Character counter */
+.charCount {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: right;
+}
+.charCount--warn {
+  color: #e67e22;
+  font-weight: 600;
+}
+
+/* Submit status banners */
+.formStatus {
+  display: block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.formStatus--success {
+  background: #eafaf1;
+  color: #1e8449;
+  border: 1px solid #a9dfbf;
+}
+.formStatus--error {
+  background: #fdedec;
+  color: #c0392b;
+  border: 1px solid #f5b7b1;
+}
+
+/* Disabled send button */
+.formButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/*Responsiveness*/
+@media (max-width: 1280) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024) {
+    .contact {
+        gap: 30% {
+        width: 100%;
+    };
+    }
+}
+
+
+
+/*resposiveness for small screens*/
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .cSection {
+        width: 100%;
+    }
+
+
+    .cSection:first-child {
+        height: 60%;
+        margin-top: 50px;
+    }
+
+    .cSection:last-child {
+        height: 30%;
+    }
+
+
+    .formItem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cTitle {
+        font-size: 30px;
+    }
+}
+

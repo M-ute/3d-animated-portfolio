@@ -66,7 +66,7 @@ const services = [
 
 const Services = () => {
     //3d animation
-    const [currentServiceId, setCurrentServiceId] =useState(1);
+    const [currentServiceId, setCurrentServiceId] =useState(2);
     const ref = useRef();
     const isInView = useInView(ref, {once: true, amount: 0.7 } );
     return (
