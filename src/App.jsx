@@ -38,7 +38,7 @@ const App = () => {
         </Suspense>
       </section>
       
-      <section ref={contactRef}>
+      <section ref={contactRef} id="contact">
         <Suspense fallback="Loading">
             {contactInView && <Contact/>}
         </Suspense>

@@ -95,17 +95,21 @@ const Hero = () => {
             {/*RIGHT SECTION*/}
             <div className="hSection right">
                 {/*FOLLOW ICONS*/}
-                <motion.div variants={followVariants} initial="initial" animate="animate" className="follow">
-                    <motion.a variants={followVariants} href="/">
-                        <img src="/facebook.png" alt="" />
+                <motion.div variants={followVariants} 
+                initial="initial" 
+                animate="animate" 
+                className="follow"
+                >
+                    <motion.a variants={followVariants} href="https://www.linkedin.com/in/wiabo-amos76" target="_blank" rel="noreferrer">
+                        <img src="/linkedin.png" alt="linkedin" />
                     </motion.a>
 
-                    <motion.a variants={followVariants} href="/">
-                        <img src="/instagram.png" alt="" />
+                    <motion.a variants={followVariants} href="https://www.x.com/KwesiMute" target="_blank" rel="noreferrer" >
+                        <img src="/twitter.png" alt="twitter" />
                     </motion.a>
 
-                    <motion.a variants={followVariants} href="/">
-                        <img src="/youtube.png" alt="" />
+                    <motion.a variants={followVariants} href="https://wa.me/233240552533" target="_blank" rel="noreferrer">
+                        <img src="/whatsapp.png" alt="whatsapp" />
                     </motion.a>
                     <motion.div variants={followVariants} className="followTextContainer">
                         <div className="followText">FOLLOW ME</div>
@@ -122,9 +126,9 @@ const Hero = () => {
                 className="certificate">
                 <img src="/certificate.png" alt="" />
                 <br />
-                 Web Development Certificate <br/>
-                PROFESSIONAL <br/>
-                UI designer
+                 Web Development Geek <br/>
+                Passionate about Tech <br/>
+                
             </motion.div>
 
             {/* CONTACT BUTTON */}

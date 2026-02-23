@@ -99,7 +99,7 @@
     flex-direction: column;
     gap: 10px;
     padding: 16px;
-    background-color: #260b5c;
+    background-color: rgba(61, 211, 118, 0.576);
     border-bottom-right-radius: 15px;
 }
 

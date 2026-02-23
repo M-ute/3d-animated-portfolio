@@ -4,9 +4,27 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 //import { useInView } from 'motion/react';
 import ContactSvg from "./ContactSvg";
+import { motion } from "motion/react";
 
 
 
+
+
+const socialVariants = {
+    initial: {
+        x: -100,
+        opacity: 0,
+    }, 
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.2,
+        },
+    },
+
+};
 //create my variants
 // const listVariants = {
 //     initial: {
@@ -264,64 +282,82 @@ const Contact = () => {
         <form  ref={form} onSubmit={sendEmail} noValidate>
           <h1  className="cTitle">My Inbox is Lonely</h1>
 
-          {/* Name */}
-<div className="formItem">
-  <input
-    id="username"
-    type="text"
-    name="username"
-    placeholder={errors.username && touched.username ? errors.username : "Yaa Baby"}
-    value={fields.username}
-    onChange={handleChange}
-    onBlur={handleBlur}
-    maxLength={RULES.username.maxLength}
-    autoComplete="name"
-    aria-invalid={!!errors.username}
-  />
-</div>
+                        {/* Name */}
+            <div className="formItem">
+                <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    placeholder={errors.username && touched.username ? errors.username : "Yaa Baby"}
+                    value={fields.username}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    maxLength={RULES.username.maxLength}
+                    autoComplete="name"
+                    aria-invalid={!!errors.username}
+                />
+            </div>
 
-{/* Email */}
-<div className="formItem">
-  <input
-    id="user_email"
-    type="email"
-    name="user_email"
-    placeholder={errors.user_email && touched.user_email ? errors.user_email : "yaababy@anymail.com"}
-    value={fields.user_email}
-    onChange={handleChange}
-    onBlur={handleBlur}
-    maxLength={RULES.user_email.maxLength}
-    autoComplete="email"
-    aria-invalid={!!errors.user_email}
-  />
-</div>
+                {/* Email */}
+            <div className="formItem">
+                <input
+                    id="user_email"
+                    type="email"
+                    name="user_email"
+                    placeholder={errors.user_email && touched.user_email ? errors.user_email : "yaababy@anymail.com"}
+                    value={fields.user_email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    maxLength={RULES.user_email.maxLength}
+                    autoComplete="email"
+                    aria-invalid={!!errors.user_email}
+                />
+            </div>
 
-{/* Message */}
-<div className="formItem">
-  <textarea
-    id="user_message"
-    rows={10}
-    name="user_message"
-    placeholder={errors.user_message && touched.user_message ? errors.user_message : "Write your message here..."}
-    value={fields.user_message}
-    onChange={handleChange}
-    onBlur={handleBlur}
-    maxLength={msgMax}
-    aria-invalid={!!errors.user_message}
-  />
-</div>
-          <button className="formButton" disabled={submitting} type="submit">
-            {submitting ? "Sending…" : "Send"}
-          </button>
+                {/* Message */}
+            <div className="formItem">
+                <textarea
+                    id="user_message"
+                    rows={10}
+                    name="user_message"
+                    placeholder={errors.user_message && touched.user_message ? errors.user_message : "Write your message here..."}
+                    value={fields.user_message}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    maxLength={msgMax}
+                    aria-invalid={!!errors.user_message}
+                />
+            </div>
+                        <button className="formButton" disabled={submitting} type="submit">
+                            {submitting ? "Sending…" : "Send"}
+                        </button>
+
+                    <div className="socialMediaHandles">
+                    <motion.a variants={socialVariants} href="https://www.linkedin.com/in/wiabo-amos76" target="_blank" rel="noreferrer">
+                        <img src="/linkedin.png" alt="linkedin" />
+                    </motion.a>
+
+                    <motion.a variants={socialVariants} href="https://www.x.com/KwesiMute" target="_blank" rel="noreferrer" >
+                        <img src="/twitter.png" alt="twitter" />
+                    </motion.a>
+
+                    <motion.a variants={socialVariants} href="https://wa.me/233240552533" target="_blank" rel="noreferrer">
+                        <img src="/whatsapp.png" alt="whatsapp" />
+                    </motion.a>
+        </div>
         </form>
-      </div>
 
-      {/* right section */}
-      <div className="cSection">
+        
+    </div> 
 
-        <ContactSvg />
+        
 
-      </div>
+                {/* right section */}
+                <div className="cSection">
+
+                    <ContactSvg />
+
+                </div>
     </div>
   );
 };
